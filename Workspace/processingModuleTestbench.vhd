@@ -1,14 +1,26 @@
-LIBRARY ieee;
+LIBRARY IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
 USE ieee.math_real.ALL;
-USE ieee.numeric_std.ALL;
+use IEEE.NUMERIC_STD.all;
 
 entity processing_module_tb is
 end processing_module_tb;
 
 
--- ARCHITECTURE BLOCK
+-- ARCHITECTURE BLOCK --
 architecture Behavioral of processing_module_tb is
--- Component and signal declaration
+
+--Signal declarations
+signal S_CLK : std_logic :='0';
+signal S_IL : std_logic_vector(7 downto 0) := "00000000";
+signal S_IR : std_logic_vector(7 downto 0) := "00000000";
+signal S_RS : std_logic_vector(7 downto 0);
+signal S_RB : std_logic_vector(7 downto 0);
+constant clk_period : time := 1 ns;
+
+
+-- Component declarations
 component processing_module port (
 	IL : in std_logic_vector(7 downto 0); 
 	IR : in std_logic_vector(7 downto 0);
@@ -18,37 +30,35 @@ component processing_module port (
 );
 end component;
 
-signal clk : std_logic :='0';
-signal IL : std_logic_vector :='0';
-signal IR : std_logic_vector :='0';
-signal RS : std_logic_vector :='0';
-signal RB : std_logic_vector(7 downto 0);
-constant clk_period : time := 1 ns;
+
 
 -- functional code
 begin
-	uut: processing_module PORT MAP (
-         clk => clk,
-         IL=>IL,
-         IR=>IR,
-         RS=>RS,
-         RB=>RB
-     );       
+	uut: processing_module PORT MAP ( S_IL, S_IR, S_RS, S_RB, S_CLK ); 
+	
+	     
 	clk_process : process
 	begin
-		clk <= '0';
+		S_CLK <= '0';
 		wait for clk_period/2;  --for 0.5 ns signal is '0'.
-		clk <= '1';
+		S_CLK <= '1';
+		S_CLK <= '1';
 		wait for clk_period/2;  --for next 0.5 ns signal is '1'.
 	end process;
 
-	input_process : process(falling_edge(clk))
-	VARIABLE int_rand: integer;
-	variable stim: std_logic_vector(7 DOWNTO 0);
-	begin
-		int_rand := INTEGER(TRUNC(rand*255.0));
-		stim := std_logic_vector(to_unsigned(int_rand, stim'LENGTH));
-		IL <= stim;
+	process(S_CLK)
+        variable seed1, seed2: positive;
+        variable rand_num : integer := 0;
+        variable rand: real;
+        variable range_of_rand : real := 255.0;
+        variable stim: std_logic_vector(7 DOWNTO 0);
+    begin
+        if (falling_edge(S_CLK)) then
+            uniform(seed1, seed2, rand);
+            rand_num := integer(rand*range_of_rand);
+            stim := std_logic_vector(to_unsigned(rand_num, stim'LENGTH));
+            S_IL <= stim;
+		end if;
 	end process;
 
 end Behavioral;
