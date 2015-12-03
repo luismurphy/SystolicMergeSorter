@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Nov 19 13:31:06 2015
+# Process ID: 11496
+# Log file: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/vivado.log
+# Journal file: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.xpr
+synth_design -rtl -name rtl_1
+launch_simulation
+launch_simulation
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+update_compile_order -fileset sim_2
+current_fileset -simset [ get_filesets sim_2 ]
+set_property top processing_module_tb [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+launch_simulation -simset sim_2
+create_fileset -simset sim_3
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+update_compile_order -fileset sim_3
+current_fileset -simset [ get_filesets sim_3 ]
+set_property top processing_module_tb [get_filesets sim_3]
+set_property top_lib xil_defaultlib [get_filesets sim_3]
+update_compile_order -fileset sim_3
+launch_simulation -simset sim_3
+create_fileset -simset sim_4
+set_property SOURCE_SET sources_1 [get_filesets sim_4]
+update_compile_order -fileset sim_4
+current_fileset -simset [ get_filesets sim_4 ]
+set_property SOURCE_SET sources_1 [get_filesets sim_4]
+launch_simulation -simset sim_4
+create_fileset -simset sim_5
+set_property SOURCE_SET sources_1 [get_filesets sim_5]
+update_compile_order -fileset sim_5
+set_property SOURCE_SET sources_1 [get_filesets sim_4]
+import_files -fileset sim_4 -norecurse C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModuleTestbench.vhd
+update_compile_order -fileset sim_4
+update_compile_order -fileset sim_4
+update_compile_order -fileset sim_4
+launch_simulation -simset sim_4
+current_fileset -simset [ get_filesets sim_1 ]
+launch_simulation
+delete_fileset sim_5
+delete_fileset sim_4
+delete_fileset sim_3
+delete_fileset sim_2
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation

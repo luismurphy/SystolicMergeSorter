@@ -42,7 +42,6 @@ begin
 		S_CLK <= '0';
 		wait for clk_period/2;  --for 0.5 ns signal is '0'.
 		S_CLK <= '1';
-		S_CLK <= '1';
 		wait for clk_period/2;  --for next 0.5 ns signal is '1'.
 	end process;
 
@@ -58,6 +57,11 @@ begin
             rand_num := integer(rand*range_of_rand);
             stim := std_logic_vector(to_unsigned(rand_num, stim'LENGTH));
             S_IL <= stim;
+            
+--            uniform(seed1, seed2, rand);
+--            rand_num := integer(rand*range_of_rand);
+--            stim := std_logic_vector(to_unsigned(rand_num, stim'LENGTH));
+--            S_IR <= stim;
 		end if;
 	end process;
 
