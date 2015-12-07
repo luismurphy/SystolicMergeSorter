@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -12,49 +11,34 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Array8 is
-    Port ( head_in : in STD_LOGIC_VECTOR(7 downto 0);
-           tail_in : in STD_LOGIC_VECTOR(7 downto 0);
-           head_out : out STD_LOGIC_VECTOR(7 downto 0);
+    Port ( IL : in STD_LOGIC;
+           IR : in STD_LOGIC;
+           RS : out STD_LOGIC;
+           RB : out STD_LOGIC;
            clk : in STD_LOGIC);
 end Array8;
 
 architecture Behavioral of Array8 is
+component processing_module
+Port(IL : in std_logic_vector(7 downto 0); 
+	IR : in std_logic_vector(7 downto 0);
+	RS : out std_logic_vector(7 downto 0); 
+	RB : out std_logic_vector(7 downto 0);
+	clk : in std_logic
+	);
+	end component;
+	signal c: std_logic_vector(7 downto 0);
+	
+begin
+g1: For i in 0 to 7 generate
+comp: processing_module
+port map(
+IL=>R(i),
+IR=>RS(i+1),
+RS=>RS(i),
+RB=>RB(i),
+clk=>clk(i));
+end generate g1;
 
-    -- DECLARE
-    component processing_module
-    Port(IL : in std_logic_vector(7 downto 0); 
-        IR : in std_logic_vector(7 downto 0);
-        RS : out std_logic_vector(7 downto 0); 
-        RB : out std_logic_vector(7 downto 0);
-        clk : in std_logic
-        );
-    end component;
-    
-    type vector_array is array (0 to 7) of std_logic_vector(7 downto 0);
-    signal left_data : vector_array;
-    signal right_data : vector_array;
-    
-    -- INSTANTIATE
-    begin
-    pm_array: For i in 0 to 7 generate
-        pm1: if i=0 generate
-        begin
-            pm: component processing_module
-                port map(head_in, left_data(i+1), head_out, right_data(i), clk);
-                --       IL        IR               RS          RB
-        end generate pm1;
-        
-        pm_middle: if (i>0 AND i<7) generate
-        begin
-            pm: component processing_module
-                port map(right_data(i-1), left_data(i+1), left_data(i), right_data(i), clk);
-        end generate pm_middle;
-        
-        pm7: if (i=7) generate
-        begin
-            pm: component processing_module
-                port map(right_data(i-1), tail_in, left_data(i), right_data(i), clk);
-        end generate pm7;
-        
-    end generate pm_array;
+
 end Behavioral;

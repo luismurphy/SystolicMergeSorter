@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Dec 03 18:24:13 2015
+# Process ID: 9608
+# Current directory: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.runs/synth_1
+# Command line: vivado.exe -log Array8.vds -mode batch -messageDb vivado.pb -notrace -source Array8.tcl
+# Log file: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.runs/synth_1/Array8.vds
+# Journal file: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Array8.tcl -notrace
+Command: synth_design -top Array8 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 285.223 ; gain = 113.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Array8' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:21]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:19]
+WARNING: [Synth 8-614] signal 'regS' is read in the process but is not in the sensitivity list [C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:25]
+WARNING: [Synth 8-614] signal 'regB' is read in the process but is not in the sensitivity list [C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'processing_module' (1#1) [C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:19]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:49]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:49]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:49]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:49]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:49]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:49]
+INFO: [Synth 8-3491] module 'processing_module' declared at 'C:/Users/Luis/Development/git/SystolicMergeSorter/Workspace/processingModule.vhd:8' bound to instance 'pm' of component 'processing_module' [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'Array8' (2#1) [C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/Array8.vhd:21]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 322.609 ; gain = 151.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 322.609 ; gain = 151.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 322.609 ; gain = 151.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 326.887 ; gain = 155.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module processing_module 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 443.074 ; gain = 271.668
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 444.375 ; gain = 272.969
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 444.375 ; gain = 272.969
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 472.328 ; gain = 300.922
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 472.328 ; gain = 300.922
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 472.328 ; gain = 300.922
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 472.328 ; gain = 300.922
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 472.328 ; gain = 300.922
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    80|
+|3     |LUT2   |     8|
+|4     |LUT3   |     8|
+|5     |LUT4   |   656|
+|6     |LUT5   |    24|
+|7     |LUT6   |   184|
+|8     |FDRE   |   128|
+|9     |IBUF   |    17|
+|10    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------+------+
+|      |Instance                     |Module              |Cells |
++------+-----------------------------+--------------------+------+
+|1     |top                          |                    |  1114|
+|2     |  \pm_array[0].pm1.pm        |processing_module   |   149|
+|3     |  \pm_array[1].pm_middle.pm  |processing_module_0 |   149|
+|4     |  \pm_array[2].pm_middle.pm  |processing_module_1 |   136|
+|5     |  \pm_array[3].pm_middle.pm  |processing_module_2 |   136|
+|6     |  \pm_array[4].pm_middle.pm  |processing_module_3 |   136|
+|7     |  \pm_array[5].pm_middle.pm  |processing_module_4 |   136|
+|8     |  \pm_array[6].pm_middle.pm  |processing_module_5 |   140|
+|9     |  \pm_array[7].pm7.pm        |processing_module_6 |   106|
++------+-----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 475.859 ; gain = 268.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 475.859 ; gain = 304.453
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 547.559 ; gain = 343.012
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 547.559 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 03 18:24:31 2015...
