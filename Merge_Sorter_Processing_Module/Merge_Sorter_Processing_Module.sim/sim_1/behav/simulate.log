@@ -1,8 +1,16 @@
 Vivado Simulator 2015.3
 Time resolution is 1 ps
-Note: Case 4
-Time: 4500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
+Note: Case 2
+Time: 1500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
 Note: Case 3
+Time: 2500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
+Note: Case 4
+Time: 3500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
+Note: Case 5
+Time: 4500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
+Note: Case 6
+Time: 5500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
+Note: Case 7
 Time: 6500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd
 Note: Case 7
 Time: 7500 ps  Iteration: 1  Process: /processing_module_tb/uut/line__26  File: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.srcs/sources_1/imports/Workspace/processingModule.vhd

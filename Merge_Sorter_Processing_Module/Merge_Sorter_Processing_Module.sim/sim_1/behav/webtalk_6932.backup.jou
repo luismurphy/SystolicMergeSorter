@@ -2,8 +2,8 @@
 # Webtalk v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Mon Dec 07 18:43:02 2015
-# Process ID: 4428
+# Start of session at: Mon Dec 07 20:02:19 2015
+# Process ID: 6932
 # Current directory: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.sim/sim_1/behav/xsim.dir/processing_module_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.sim/sim_1/behav/webtalk.log

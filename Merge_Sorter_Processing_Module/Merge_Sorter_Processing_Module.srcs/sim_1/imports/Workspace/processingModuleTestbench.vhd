@@ -16,7 +16,7 @@ signal S_IL : std_logic_vector(7 downto 0) := "00000000";
 signal S_IR : std_logic_vector(7 downto 0) := "00000011";
 signal S_RS : std_logic_vector(7 downto 0);
 signal S_RB : std_logic_vector(7 downto 0);
-constant clk_period : time := 1 ns;
+constant CLK_period : time := 1 ns;
 
 
 -- Component declarations
@@ -25,7 +25,7 @@ component processing_module port (
 	IR : in std_logic_vector(7 downto 0);
 	RS : out std_logic_vector(7 downto 0); 
 	RB : out std_logic_vector(7 downto 0);
-	clk : in std_logic
+	CLK : in std_logic
 );
 end component;
 
@@ -33,14 +33,14 @@ end component;
 
 -- functional code
 begin
-	uut: processing_module PORT MAP ( S_IL, S_IR, S_RS, S_RB, S_CLK ); 
+	uut: processing_module port map ( S_IL, S_IR, S_RS, S_RB, S_CLK ); 
 	
-	clk_process : process
+	CLK_process : process
 	begin
 		S_CLK <= '0';
-		wait for clk_period/2;  --for 0.5 ns signal is '0'.
+		wait for CLK_period/2;  --for 0.5 ns signal is '0'.
 		S_CLK <= '1';
-		wait for clk_period/2;  --for next 0.5 ns signal is '1'.
+		wait for CLK_period/2;  --for next 0.5 ns signal is '1'.
 	end process;
 
 	process(S_CLK)
