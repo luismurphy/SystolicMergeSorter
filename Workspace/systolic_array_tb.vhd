@@ -14,7 +14,7 @@ architecture Behavioral of systolic_array_tb is
 signal S_CLK : std_logic := '0';
 -- Initialize according to first case you want to test
 signal S_HEAD_IN : std_logic_vector(7 downto 0) := "00000001";
-signal S_TAIL_IN : std_logic_vector(7 downto 0) := "00000000";
+signal S_TAIL_IN : std_logic_vector(7 downto 0) := "11111111";
 signal S_HEAD_OUT : std_logic_vector(7 downto 0);
 constant CLK_PERIOD : time := 1 ns;
 

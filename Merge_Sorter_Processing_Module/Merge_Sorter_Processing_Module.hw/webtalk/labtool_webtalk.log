@@ -1,0 +1,9 @@
+
+****** Webtalk v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Luis/Development/git/SystolicMergeSorter/Merge_Sorter_Processing_Module/Merge_Sorter_Processing_Module.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 49.219 ; gain = 0.020
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 03 18:30:19 2015...
